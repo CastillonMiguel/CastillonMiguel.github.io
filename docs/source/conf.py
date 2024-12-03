@@ -100,7 +100,7 @@ html_theme_options = {
     "icon_links": [
         {
             "name": "LinkedIn",
-            "url": "https:/www.linkedin.com/in/miguelcastillon",
+            "url": "https://www.linkedin.com/in/miguelcastillon",
             "icon": "fa-brands fa-linkedin",
         },
     ],
