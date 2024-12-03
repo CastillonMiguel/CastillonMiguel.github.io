@@ -25,13 +25,14 @@
 
 .. include:: Contact/index.rst
 
-.. Content 📚
-.. **********
-.. .. toctree::
-..    :maxdepth: 1
+Content 📚
+**********
+.. toctree::
+   :maxdepth: 1
    
+   Projects/index
+   Contact/index
+
 ..    AboutMe/index
-..    Projects/index
 ..    Publications/index
 ..    Utils/index
-..    Contact/index
