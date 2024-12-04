@@ -31,8 +31,8 @@ Content 📚
    :maxdepth: 1
    
    Projects/index
+   Utils/index
    Contact/index
 
 ..    AboutMe/index
 ..    Publications/index
-..    Utils/index
