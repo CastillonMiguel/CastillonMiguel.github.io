@@ -46,4 +46,5 @@ As a research scientist, I have compiled these resources through years of experi
    VisualStudioCode/main
    Libraries/main
    Latex/main
+   LatexGithubAction/main.rst
    
