@@ -79,6 +79,7 @@ html_sidebars = {
     "AboutMe/index": [],
     "Projects/index": [],
     "Publications/index": [],
+    "Art/index": [],
     "Contact/index": [],
 }
 

@@ -32,6 +32,7 @@ Content 📚
    
    Projects/index
    Utils/index
+   Art/index
    Contact/index
 
 ..    AboutMe/index
