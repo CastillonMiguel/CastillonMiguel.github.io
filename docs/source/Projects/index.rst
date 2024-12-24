@@ -23,7 +23,7 @@ The **pyLEFM** project is a Python library designed for **Linear Elastic Fractur
    **pyLEFM** will be published soon! Stay tuned for its release.
 
 
-.. image:: images/logo_name.png
+.. image:: images/logo_pylefm.png
    :alt: pyLEFM
 
 
@@ -33,4 +33,8 @@ The **pyMyCar** project is an open-source Python framework tailored for car dyna
 
 .. note::
    **pyMyCar** will be published soon! Keep an eye out for updates.
+
+
+.. image:: images/logo_pymycar.png
+   :alt: pyLEFM
    
