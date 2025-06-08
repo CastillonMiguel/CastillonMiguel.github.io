@@ -31,10 +31,8 @@ The **pyLEFM** project is a Python library designed for **Linear Elastic Fractur
 --------------
 The **pyMyCar** project is an open-source Python framework tailored for car dynamics simulations. It allows for real-time analysis of vehicle behavior under different driving conditions. Whether you're working on autonomous vehicle simulations or simply testing car models, **pyMyCar** offers flexibility and precision in handling vehicle dynamics. 🚘💡
 
-.. note::
-   **pyMyCar** will be published soon! Keep an eye out for updates.
+For more detailed information, please visit the `pyMyCar Documentation <https://pymycar.readthedocs.io/en/latest/index.html>`_ and the `GitHub repository <https://github.com/CastillonMiguel/pymycar>`_.
 
-
-.. image:: images/logo_pymycar.png
-   :alt: pyLEFM
-   
+.. image:: https://raw.githubusercontent.com/CastillonMiguel/pymycar/main/docs/source/_static/logo.png
+   :target: https://pymycar.readthedocs.io/en/latest/index.html
+   :alt: pyMyCar
