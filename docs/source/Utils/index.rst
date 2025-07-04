@@ -47,4 +47,5 @@ As a research scientist, I have compiled these resources through years of experi
    Libraries/main
    Latex/main
    LatexGithubAction/main.rst
+   Running_Simulations_with_Screen/main.rst
    
