@@ -1,5 +1,5 @@
-Research Utilities 🛠️
-*********************
+Utilities 🛠️
+************
 
 Welcome to the **Research Utilities** section of my website. This space is dedicated to providing a collection of tools, resources, and materials that I have found invaluable in my journey through **computational mechanics** and **programming for scientific research**. Whether you're a student, a professional researcher, or someone exploring computational sciences, I hope these resources will support your work and learning.
 

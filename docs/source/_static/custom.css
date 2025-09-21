@@ -1,0 +1,11 @@
+/* Hide "On this page" section on the index page only */
+/* This targets the page when it's the root index */
+body.bd-page[data-master-doc="index"] .bd-sidebar-secondary,
+body.bd-page[data-pagename="index"] .bd-sidebar-secondary {
+    display: none !important;
+}
+
+/* Alternative approach using URL-based targeting */
+body:has(.bd-article[data-pagename="index"]) .bd-sidebar-secondary {
+    display: none !important;
+}

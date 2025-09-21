@@ -4,6 +4,8 @@ Projects 📦
 
 This section features some of my key projects:
 
+.. _phasefieldx:
+
 **PhaseFieldX** ⚙️
 -----------------
 The **PhaseFieldX** project is designed to simulate and analyze material behavior using phase-field models, which provide a continuous approximation of interfaces, phase boundaries, and discontinuities such as cracks. Leveraging the robust capabilities of **FEniCSx**, a renowned finite element framework for solving partial differential equations, this project facilitates efficient and precise numerical simulations. It supports a wide range of applications, including phase-field fracture, solidification, and other complex material phenomena, making it an invaluable resource for researchers and engineers in **materials science**. 🧪⚙️

@@ -98,7 +98,17 @@ html_theme_options = {
     "footer_start": ["sphinx-version"],
     "github_url": "https://github.com/CastillonMiguel",
     "navbar_align": "left",
+    "show_toc_level": 1,
+    "secondary_sidebar_items": {
+        "**": ["page-toc", "edit-this-page"],
+        "index": [],  # Hide "On this page" for index only
+    },
     "icon_links": [
+        {
+            "name": "Email",
+            "url": "mailto:miguel.research@pm.me",
+            "icon": "fa-solid fa-envelope",
+        },
         {
             "name": "LinkedIn",
             "url": "https://www.linkedin.com/in/miguelcastillon",
@@ -106,3 +116,8 @@ html_theme_options = {
         },
     ],
 }
+
+
+# Custom configuration to hide "On this page" for specific pages
+def setup(app):
+    app.add_css_file('custom.css')
