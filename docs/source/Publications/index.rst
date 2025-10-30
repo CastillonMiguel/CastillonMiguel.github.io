@@ -160,10 +160,10 @@ Welcome to my research publications! Here you'll find my contributions to the fi
                 <a href="https://arxiv.org/abs/2509.08939" target="_blank" class="pub-button btn-arxiv">
                     📄<br>arXiv Preprint
                 </a>
-                <a href="https://github.com/CastillonMiguel/A-Phase-Field-Approach-to-Fracture-and-Fatigue-Analysis-Bridging-Theory-and-Simulation" target="_blank" class="pub-button btn-github">
+                <a href="https://github.com/CastillonMiguel/A-Phase-Field-Approach-to-Fatigue-Analysis-Bridging-Theory-and-Simulation" target="_blank" class="pub-button btn-github">
                     💻<br>GitHub Repo
                 </a>
-                <a href="https://phasefieldx.readthedocs.io/en/latest/index.html" target="_blank" class="pub-button btn-docs">
+                <a href="https://phasefieldfatigue.readthedocs.io" target="_blank" class="pub-button btn-docs">
                     📚<br>Documentation
                 </a>
             </div>
