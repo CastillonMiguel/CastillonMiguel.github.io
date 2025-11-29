@@ -148,11 +148,11 @@
         </div>
 
         <div class="skill-card">
-            <a href="https://arxiv.org/abs/2509.08939" target="_blank">
+            <a href="https://doi.org/10.1016/j.ijfatigue.2025.109397" target="_blank">
                 <div class="skill-icon">📄</div>
-                <div class="skill-title">Fatigue Analysis Preprint</div>
+                <div class="skill-title">Fatigue Analysis Journal Paper</div>
                 <div class="skill-description">
-                    Check out my preprint on a novel phase-field approach to fracture and fatigue analysis, available on arXiv.
+                    Check out the novel phase-field approach to fatigue analysis, published in the International Journal of Fatigue.
                 </div>
             </a>
         </div>
