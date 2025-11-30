@@ -121,7 +121,7 @@
         <h1 class="hero-title">Miguel Castillón</h1>
         <p class="hero-subtitle">Research Scientist</p>
         <p class="hero-description">
-            Driving innovation in computational mechanics at the <a href="https://materials.imdea.org" target="_blank" style="color: #fff; text-decoration: underline;">IMDEA Materials Institute</a>, with a focus on <strong>phase-field models</strong>, the <strong>finite element method</strong>, and <strong>advanced numerical methods</strong>.
+            I am driving innovation in computational mechanics, with a focus on phase-field models, the finite element method, and advanced numerical methods.
         </p>
         <a href="Publications/index.html" class="hero-button">View My Publications 📄</a>
     </div>

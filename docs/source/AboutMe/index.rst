@@ -176,7 +176,7 @@ Professional Experience 💼
                 <div style="color: #666; font-size: 0.9rem;">IMDEA Materials Institute</div>
             </div>
             </div>
-            <div class="timeline-dates">📅 January 2021 - Present</div>
+            <div class="timeline-dates">📅 January 2021 - October 2025</div>
             <div class="timeline-description">
             Specializing in:
             <ul style="margin-top: 0.5rem;">
