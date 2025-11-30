@@ -1,0 +1,710 @@
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="../../" data-theme="dark">
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>C++ Compilation Flags 🏁 &#8212; Miguel Castillón 0.1 documentation</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "dark";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "dark";
+  </script>
+  <!--
+    this give us a css class that will be invisible only if js is disabled
+  -->
+  <noscript>
+    <style>
+      .pst-js-only { display: none !important; }
+
+    </style>
+  </noscript>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../../_static/styles/theme.css?digest=8878045cc6db502f8baf" rel="stylesheet" />
+<link href="../../_static/styles/pydata-sphinx-theme.css?digest=8878045cc6db502f8baf" rel="stylesheet" />
+
+    <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=a746c00c" />
+    <link rel="stylesheet" type="text/css" href="../../_static/graphviz.css?v=4ae1632d" />
+    <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="../../_static/plot_directive.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/custom.css?v=8db824e8" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-design.min.css?v=95c83b7e" />
+  
+  <!-- So that users can add custom icons -->
+  <script src="../../_static/scripts/fontawesome.js?digest=8878045cc6db502f8baf"></script>
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../../_static/scripts/bootstrap.js?digest=8878045cc6db502f8baf" />
+<link rel="preload" as="script" href="../../_static/scripts/pydata-sphinx-theme.js?digest=8878045cc6db502f8baf" />
+
+    <script src="../../_static/documentation_options.js?v=2709fde1"></script>
+    <script src="../../_static/doctools.js?v=9bcbadda"></script>
+    <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../../_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="../../_static/copybutton.js?v=f281be69"></script>
+    <script src="../../_static/design-tabs.js?v=f930bc37"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'Utils/Computer/main';</script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="Visual Studio Code 🔵" href="../VisualStudioCode/main.html" />
+    <link rel="prev" title="Utilities 🛠️" href="../index.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  <meta name="docsearch:version" content="" />
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="dark">
+
+  
+  
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
+
+  
+  <dialog id="pst-search-dialog">
+    
+<form class="bd-search d-flex align-items-center"
+      action="../../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         placeholder="Search the docs ..."
+         aria-label="Search the docs ..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form>
+  </dialog>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+<div class="bd-header__inner bd-page-width">
+  <button class="pst-navbar-icon sidebar-toggle primary-toggle" aria-label="Site navigation">
+    <span class="fa-solid fa-bars"></span>
+  </button>
+  
+  
+  <div class=" navbar-header-items__start">
+    
+      <div class="navbar-item">
+
+  
+    
+  
+
+<a class="navbar-brand logo" href="../../index.html">
+  
+  
+  
+  
+  
+    
+    
+    
+    <img src="../../_static/Image.png" class="logo__image only-dark" alt="Miguel Castillón 0.1 documentation - Home"/>
+    <img src="../../_static/Image.png" class="logo__image only-light pst-js-only" alt="Miguel Castillón 0.1 documentation - Home"/>
+  
+  
+</a></div>
+    
+  </div>
+  
+  <div class=" navbar-header-items">
+    
+    <div class="me-auto navbar-header-items__center">
+      
+        <div class="navbar-item">
+<nav>
+  <ul class="bd-navbar-elements navbar-nav">
+    
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="../../AboutMe/index.html">
+    Professional Profile 👤
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="../../Projects/index.html">
+    Projects 📦
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="../../Publications/index.html">
+    Publications 📄
+  </a>
+</li>
+
+
+<li class="nav-item current active">
+  <a class="nav-link nav-internal" href="../index.html">
+    Utilities 🛠️
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="../../Contact/index.html">
+    Contact Me 📬
+  </a>
+</li>
+
+  </ul>
+</nav></div>
+      
+    </div>
+    
+    
+    <div class="navbar-header-items__end">
+      
+        <div class="navbar-item navbar-persistent--container">
+          
+
+<button class="btn search-button-field search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+ <i class="fa-solid fa-magnifying-glass"></i>
+ <span class="search-button__default-text">Search</span>
+ <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+</button>
+        </div>
+      
+      
+        <div class="navbar-item">
+
+<button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button pst-js-only" aria-label="Color mode" data-bs-title="Color mode"  data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <i class="theme-switch fa-solid fa-sun                fa-lg" data-mode="light" title="Light"></i>
+  <i class="theme-switch fa-solid fa-moon               fa-lg" data-mode="dark"  title="Dark"></i>
+  <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"  title="System Settings"></i>
+</button></div>
+      
+        <div class="navbar-item"><ul class="navbar-icon-links"
+    aria-label="Icon Links">
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://github.com/CastillonMiguel" title="GitHub" class="nav-link pst-navbar-icon" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><i class="fa-brands fa-square-github fa-lg" aria-hidden="true"></i>
+            <span class="sr-only">GitHub</span></a>
+        </li>
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="mailto:miguel.research@pm.me" title="Email" class="nav-link pst-navbar-icon" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><i class="fa-solid fa-envelope fa-lg" aria-hidden="true"></i>
+            <span class="sr-only">Email</span></a>
+        </li>
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://www.linkedin.com/in/miguelcastillon" title="LinkedIn" class="nav-link pst-navbar-icon" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><i class="fa-brands fa-linkedin fa-lg" aria-hidden="true"></i>
+            <span class="sr-only">LinkedIn</span></a>
+        </li>
+</ul></div>
+      
+    </div>
+    
+  </div>
+  
+  
+    <div class="navbar-persistent--mobile">
+
+<button class="btn search-button-field search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+ <i class="fa-solid fa-magnifying-glass"></i>
+ <span class="search-button__default-text">Search</span>
+ <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+</button>
+    </div>
+  
+
+  
+    <button class="pst-navbar-icon sidebar-toggle secondary-toggle" aria-label="On this page">
+      <span class="fa-solid fa-outdent"></span>
+    </button>
+  
+</div>
+
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+      <dialog id="pst-primary-sidebar-modal"></dialog>
+      <div id="pst-primary-sidebar" class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+      <div class="sidebar-header-items__center">
+        
+          
+          
+            <div class="navbar-item">
+<nav>
+  <ul class="bd-navbar-elements navbar-nav">
+    
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="../../AboutMe/index.html">
+    Professional Profile 👤
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="../../Projects/index.html">
+    Projects 📦
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="../../Publications/index.html">
+    Publications 📄
+  </a>
+</li>
+
+
+<li class="nav-item current active">
+  <a class="nav-link nav-internal" href="../index.html">
+    Utilities 🛠️
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="../../Contact/index.html">
+    Contact Me 📬
+  </a>
+</li>
+
+  </ul>
+</nav></div>
+          
+        
+      </div>
+    
+    
+    
+      <div class="sidebar-header-items__end">
+        
+          <div class="navbar-item">
+
+<button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button pst-js-only" aria-label="Color mode" data-bs-title="Color mode"  data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <i class="theme-switch fa-solid fa-sun                fa-lg" data-mode="light" title="Light"></i>
+  <i class="theme-switch fa-solid fa-moon               fa-lg" data-mode="dark"  title="Dark"></i>
+  <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"  title="System Settings"></i>
+</button></div>
+        
+          <div class="navbar-item"><ul class="navbar-icon-links"
+    aria-label="Icon Links">
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://github.com/CastillonMiguel" title="GitHub" class="nav-link pst-navbar-icon" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><i class="fa-brands fa-square-github fa-lg" aria-hidden="true"></i>
+            <span class="sr-only">GitHub</span></a>
+        </li>
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="mailto:miguel.research@pm.me" title="Email" class="nav-link pst-navbar-icon" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><i class="fa-solid fa-envelope fa-lg" aria-hidden="true"></i>
+            <span class="sr-only">Email</span></a>
+        </li>
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://www.linkedin.com/in/miguelcastillon" title="LinkedIn" class="nav-link pst-navbar-icon" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><i class="fa-brands fa-linkedin fa-lg" aria-hidden="true"></i>
+            <span class="sr-only">LinkedIn</span></a>
+        </li>
+</ul></div>
+        
+      </div>
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+<nav class="bd-docs-nav bd-links"
+     aria-label="Section Navigation">
+  <p class="bd-links__title" role="heading" aria-level="1">Section Navigation</p>
+  <div class="bd-toc-item navbar-nav"><ul class="current nav bd-sidenav">
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">C++ Compilation Flags 🏁</a></li>
+
+<li class="toctree-l1"><a class="reference internal" href="../VisualStudioCode/main.html">Visual Studio Code 🔵</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Libraries/main.html">Useful Libraries 📚</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Latex/main.html">Using LaTeX in Visual Studio Code 📄✍️</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../LatexGithubAction/main.html">Latex to pdf with github action</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Running_Simulations_with_Screen/main.html">Running Simulations with Screen</a></li>
+</ul>
+</div>
+</nav></div>
+        <div class="sidebar-primary-item">
+<div id="ethical-ad-placement"
+      class="flat"
+      data-ea-publisher="readthedocs"
+      data-ea-type="readthedocs-sidebar"
+      data-ea-manual="true">
+</div></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+      <div class="sidebar-primary-item">
+<div id="ethical-ad-placement"
+      class="flat"
+      data-ea-publisher="readthedocs"
+      data-ea-type="readthedocs-sidebar"
+      data-ea-manual="true">
+</div></div>
+  </div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main" role="main">
+        
+        
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article d-print-none">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item">
+
+<nav aria-label="Breadcrumb" class="d-print-none">
+  <ul class="bd-breadcrumbs">
+    
+    <li class="breadcrumb-item breadcrumb-home">
+      <a href="../../index.html" class="nav-link" aria-label="Home">
+        <i class="fa-solid fa-home"></i>
+      </a>
+    </li>
+    
+    <li class="breadcrumb-item"><a href="../index.html" class="nav-link">Utilities 🛠️</a></li>
+    
+    <li class="breadcrumb-item active" aria-current="page"><span class="ellipsis">C++ Compilation Flags 🏁</span></li>
+  </ul>
+</nav>
+</div>
+      
+    </div>
+  
+  
+</div>
+</div>
+              
+              
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <section id="c-compilation-flags">
+<h1>C++ Compilation Flags 🏁<a class="headerlink" href="#c-compilation-flags" title="Link to this heading">#</a></h1>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1">#                *----------*</span>
+<span class="c1">#                |   .h     |</span>
+<span class="c1">#                *----------*</span>
+<span class="c1">#                 |</span>
+<span class="c1">#  *------*      \ /       compile   *----*</span>
+<span class="c1">#  | .cpp |----&gt; Prepocess --------&gt; | .o |\</span>
+<span class="c1">#  *------*                          *----* \ link   **************</span>
+<span class="c1">#                                             -----&gt; *-executable-*</span>
+<span class="c1">#  *------*                compile   *----* /   ^    **************</span>
+<span class="c1">#  | .cpp |----&gt; Prepocess --------&gt; | .o |/    |</span>
+<span class="c1">#  *------*      / \                 *----*     |</span>
+<span class="c1">#                 |                            libraries</span>
+<span class="c1">#                *----------*</span>
+<span class="c1">#                |   .h     |</span>
+<span class="c1">#                *----------*</span>
+<span class="c1">#</span>
+</pre></div>
+</div>
+<p>In C++ compilation, compiler flags (also known as options or switches) are used to control the behavior of the compiler. 🛠️ One commonly used flag is <code class="docutils literal notranslate"><span class="pre">-O3</span></code>, which is a high-level optimization flag. Below is a detailed explanation of what <code class="docutils literal notranslate"><span class="pre">-O3</span></code> means, as well as some related flags.</p>
+<section id="what-does-o-mean">
+<h2>What Does <code class="docutils literal notranslate"><span class="pre">-O</span></code> Mean?<a class="headerlink" href="#what-does-o-mean" title="Link to this heading">#</a></h2>
+<ul class="simple">
+<li><p><strong>Optimization Level</strong>: The <code class="docutils literal notranslate"><span class="pre">-O</span></code> flag is used to specify the optimization level of the compiler. The number following the <code class="docutils literal notranslate"><span class="pre">O</span></code> indicates the level of optimization to apply. Specifically:</p>
+<ul>
+<li><p><code class="docutils literal notranslate"><span class="pre">-O0</span></code>: No optimization (default). 🐢 This level compiles code with debugging in mind, making it easier to step through the code, but resulting in slower performance.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">-O1</span></code>: Basic optimization. ⚙️ This level enables simple optimizations that do not significantly increase compile time, focusing on improving performance without aggressive changes.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">-O2</span></code>: Further optimizations. 🚀 This level enables more optimizations that improve performance and might include inlining functions and optimizing loops, with a focus on balancing compile time and execution speed.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">-O3</span></code>: High-level optimizations. 🏎️ This level applies all optimizations from <code class="docutils literal notranslate"><span class="pre">-O2</span></code> and includes additional aggressive optimizations. It can enable vectorization, inline functions aggressively, and may even unroll loops to enhance performance, especially for compute-intensive applications.</p></li>
+</ul>
+</li>
+</ul>
+</section>
+<section id="effects-of-using-o3">
+<h2>Effects of Using <code class="docutils literal notranslate"><span class="pre">-O3</span></code><a class="headerlink" href="#effects-of-using-o3" title="Link to this heading">#</a></h2>
+<ol class="arabic simple">
+<li><p><strong>Performance Improvements</strong>: ⚡ Code compiled with <code class="docutils literal notranslate"><span class="pre">-O3</span></code> is generally faster than code compiled with lower optimization levels. The compiler tries to produce the most efficient machine code possible.</p></li>
+<li><p><strong>Increased Compile Time</strong>: ⏳ While <code class="docutils literal notranslate"><span class="pre">-O3</span></code> can lead to significant performance improvements in the resulting executable, it can also lead to longer compile times. This is because the compiler performs more complex analyses and transformations to optimize the code.</p></li>
+<li><p><strong>Increased Binary Size</strong>: 💾 The optimizations performed by <code class="docutils literal notranslate"><span class="pre">-O3</span></code> can lead to larger binary sizes compared to lower optimization levels. This is due to additional inlining and the generation of more complex machine instructions.</p></li>
+<li><p><strong>Potential Side Effects</strong>: ⚠️ In some cases, aggressive optimizations can lead to unexpected behavior, especially if the code relies on undefined behavior or has subtle bugs. It is crucial to ensure that the code is thoroughly tested, as optimizations might change the execution order or assumptions made in the code.</p></li>
+</ol>
+</section>
+<section id="related-optimization-flags">
+<h2>Related Optimization Flags<a class="headerlink" href="#related-optimization-flags" title="Link to this heading">#</a></h2>
+<ul class="simple">
+<li><p><strong>``-Ofast``</strong>: 🏁 This flag enables all <code class="docutils literal notranslate"><span class="pre">-O3</span></code> optimizations and also disregards strict compliance with the standard (for example, it might allow floating-point optimizations that are not standard-compliant). It is more aggressive than <code class="docutils literal notranslate"><span class="pre">-O3</span></code>, but it may lead to non-standard behavior.</p></li>
+<li><p><strong>``-Os``</strong>: 🗜️ Optimize for size. This flag enables optimizations that reduce the size of the generated binary. It can be particularly useful for applications where memory usage is a concern.</p></li>
+<li><p><strong>``-flto``</strong>: 🔗 Link Time Optimization. This flag allows the compiler to perform optimizations across different translation units during linking, potentially improving performance further.</p></li>
+</ul>
+</section>
+<section id="example-usage">
+<h2>Example Usage<a class="headerlink" href="#example-usage" title="Link to this heading">#</a></h2>
+<p>When compiling a C++ program with <code class="docutils literal notranslate"><span class="pre">g++</span></code>, you can use the <code class="docutils literal notranslate"><span class="pre">-O3</span></code> flag as follows:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>g++<span class="w"> </span>-O3<span class="w"> </span>-o<span class="w"> </span>my_program<span class="w"> </span>my_program.cpp
+</pre></div>
+</div>
+<p>In this command:</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">-O3</span></code> specifies that the compiler should use high-level optimizations.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">-o</span> <span class="pre">my_program</span></code> indicates the output executable name.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">my_program.cpp</span></code> is the source file being compiled.</p></li>
+</ul>
+</section>
+<section id="conclusion">
+<h2>Conclusion 📌<a class="headerlink" href="#conclusion" title="Link to this heading">#</a></h2>
+<p>The <code class="docutils literal notranslate"><span class="pre">-O3</span></code> flag is a powerful tool for developers looking to maximize the performance of their C++ applications. 💡 However, it’s essential to balance optimization levels with testing and validation to ensure that the optimizations do not introduce bugs or unintended behavior. 🧪</p>
+</section>
+</section>
+<section id="architectures-overview">
+<h1>Architectures Overview<a class="headerlink" href="#architectures-overview" title="Link to this heading">#</a></h1>
+<p>This document provides an overview of different computer architectures, focusing on specific architecture identifiers commonly used in software compilation and development. 🖥️ Each architecture has its unique characteristics and use cases.</p>
+<ol class="arabic">
+<li><ul>
+<li><p><strong>Architecture</strong>: ARM64, also known as AArch64, is a 64-bit instruction set architecture (ISA) developed by ARM Holdings.</p></li>
+<li><p><strong>Use Cases</strong>: 📱 It is widely used in mobile devices, embedded systems, and increasingly in servers and workstations due to its power efficiency.</p></li>
+<li><p><strong>Key Features</strong>:
+- Supports 64-bit and 32-bit applications.
+- Known for high performance per watt.
+- Increasing support for high-performance computing and server applications.</p></li>
+<li><p><strong>Example of Compilation Flag</strong>:
+- When compiling for ARM64, flags may include:</p>
+<blockquote>
+<div><ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">-march=armv8-a</span></code>: Specify the ARMv8-A architecture.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">-mcpu=cortex-a53</span></code>: Optimize for a specific ARM CPU architecture.</p></li>
+</ul>
+</div></blockquote>
+</li>
+</ul>
+</li>
+<li><ul>
+<li><p><strong>Architecture</strong>: <cite>darwin_ia64</cite> refers to the Intel Itanium architecture running on macOS (formerly known as Darwin).</p></li>
+<li><p><strong>Use Cases</strong>: Historically used in servers and high-performance computing, though its usage has declined with the rise of x86_64.</p></li>
+<li><p><strong>Key Features</strong>:
+- 64-bit architecture designed for high performance.
+- Includes features like predicated execution and hardware support for multithreading.
+- Not commonly used in consumer devices or modern macOS systems.</p></li>
+<li><p><strong>Example of Compilation Flag</strong>:
+- Compiling for <cite>darwin_ia64</cite> may involve flags like:</p>
+<blockquote>
+<div><ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">-march=itanium</span></code>: Specify the Itanium architecture.</p></li>
+</ul>
+</div></blockquote>
+</li>
+</ul>
+</li>
+<li><ul>
+<li><p><strong>Architecture</strong>: <cite>linux_ia64</cite> refers to the Itanium architecture running on the Linux operating system.</p></li>
+<li><p><strong>Use Cases</strong>: Used primarily in high-performance computing and enterprise-level applications.</p></li>
+<li><p><strong>Key Features</strong>:
+- 64-bit architecture aimed at enterprise servers.
+- Strong support for large memory capacities and advanced processing capabilities.
+- Provides performance advantages for parallel computing and scientific simulations.</p></li>
+<li><p><strong>Example of Compilation Flag</strong>:
+- For compiling applications for <cite>linux_ia64</cite>, relevant flags may include:</p>
+<blockquote>
+<div><ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">-march=itanium</span></code>: Specify the Itanium architecture.</p></li>
+</ul>
+</div></blockquote>
+</li>
+</ul>
+</li>
+<li><ul>
+<li><p><strong>Architecture</strong>: x86_64 (or AMD64) is a 64-bit extension of the x86 architecture.</p></li>
+<li><p><strong>Use Cases</strong>: 💻 Dominant in personal computers, servers, and workstations.</p></li>
+<li><p><strong>Key Features</strong>:
+- Backward compatible with 32-bit x86 applications.
+- Supports a wide range of operating systems, including Windows, Linux, and macOS.
+- Offers extensive optimization capabilities for modern processors.</p></li>
+<li><p><strong>Example of Compilation Flag</strong>:
+- When compiling for x86_64, flags might include:</p>
+<blockquote>
+<div><ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">-m64</span></code>: Compile for 64-bit x86 architecture.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">-march=native</span></code>: Optimize for the host CPU architecture.</p></li>
+</ul>
+</div></blockquote>
+</li>
+</ul>
+</li>
+</ol>
+<section id="id1">
+<h2>Conclusion 📌<a class="headerlink" href="#id1" title="Link to this heading">#</a></h2>
+<p>Understanding the differences among these architectures is crucial for software developers, especially when compiling applications for specific environments. 🌍 Each architecture has its strengths, weaknesses, and target use cases, influencing the choice of tools, libraries, and compilation options. 🛠️</p>
+</section>
+</section>
+
+
+                </article>
+              
+              
+              
+              
+              
+                <footer class="prev-next-footer d-print-none">
+                  
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="../index.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">Utilities 🛠️</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="../VisualStudioCode/main.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Visual Studio Code 🔵</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <dialog id="pst-secondary-sidebar-modal"></dialog>
+                <div id="pst-secondary-sidebar" class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+<div
+    id="pst-page-navigation-heading-2"
+    class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> On this page
+  </div>
+  <nav class="bd-toc-nav page-toc" aria-labelledby="pst-page-navigation-heading-2">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">C++ Compilation Flags 🏁</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#what-does-o-mean">What Does <code class="docutils literal notranslate"><span class="pre">-O</span></code> Mean?</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#effects-of-using-o3">Effects of Using <code class="docutils literal notranslate"><span class="pre">-O3</span></code></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#related-optimization-flags">Related Optimization Flags</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#example-usage">Example Usage</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#conclusion">Conclusion 📌</a></li>
+</ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#architectures-overview">Architectures Overview</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">Conclusion 📌</a></li>
+</ul>
+</li>
+</ul>
+
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+          </footer>
+        
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script defer src="../../_static/scripts/bootstrap.js?digest=8878045cc6db502f8baf"></script>
+<script defer src="../../_static/scripts/pydata-sphinx-theme.js?digest=8878045cc6db502f8baf"></script>
+
+  <footer class="bd-footer">
+<div class="bd-footer__inner bd-page-width">
+  
+  
+  
+    <div class="footer-items__end">
+      
+        <div class="footer-item">
+<p class="theme-version">
+  <!-- # L10n: Setting the PST URL as an argument as this does not need to be localized -->
+  Built with the <a href="https://pydata-sphinx-theme.readthedocs.io/en/stable/index.html">PyData Sphinx Theme</a> 0.16.1.
+</p></div>
+      
+    </div>
+  
+</div>
+
+  </footer>
+  </body>
+</html>
