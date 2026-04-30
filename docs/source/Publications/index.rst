@@ -167,3 +167,38 @@ Welcome to my research publications! Here you'll find my contributions to the fi
                 </a>
             </div>
 
+    .. grid-item-card::
+        :shadow: lg
+        :class-card: third-pub-card
+
+        .. raw:: html
+
+            <div style="text-align: center; margin: 20px 0;">
+                <h2 class="pub-title" style="font-size: 26px;">
+                    Proximal Galerkin for Phase Field Fracture
+                </h2>
+            </div>
+
+        ^^^
+
+        **Authors:** Miguel Castillón, Biswajit Khara, Jørgen S. Dokken, Thomas M. Surowiec, Brendan Keith, Yuri Bazilevs  
+        **Year:** 2026  
+        **Type:** arXiv preprint 
+        **arXiv:** `arXiv:2604.26210 <https://doi.org/10.48550/arXiv.2604.26210>`_
+
+        This work introduces the proximal Galerkin (PG) framework for phase-field fracture problems. The method reformulates inequality-constrained optimization into a sequence of saddle-point problems with latent variables, enabling rigorous enforcement of irreversibility and boundedness constraints on the phase-field variable. The approach is applicable to both static and dynamic fracture simulations and demonstrates strong agreement with theoretical and experimental results while providing a unified variational framework for constrained phase-field modeling.
+
+        +++
+
+        **🔗 Related Resources**
+
+        .. raw:: html
+
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin: 15px 0;">
+                <a href="https://arxiv.org/abs/2604.26210" target="_blank" class="pub-button btn-arxiv">
+                    📄<br>arXiv Paper
+                </a>
+                <a href="https://doi.org/10.48550/arXiv.2604.26210" target="_blank" class="pub-button btn-journal">
+                    🔗<br>DOI Link
+                </a>
+            </div>
