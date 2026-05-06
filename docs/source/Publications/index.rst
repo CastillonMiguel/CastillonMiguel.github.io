@@ -175,13 +175,51 @@ Welcome to my research publications! Here you'll find my contributions to the fi
 
             <div style="text-align: center; margin: 20px 0;">
                 <h2 class="pub-title" style="font-size: 26px;">
+                    A Correction Method for Crack Area Overestimation in Phase-Field Fracture
+                </h2>
+            </div>
+
+        ^^^
+
+        **Authors:** M. Castillón, J. Segurado, I. Romero,   
+        **Year:** 2026  
+        **Type:** arXiv preprint 
+        **arXiv:** `arXiv:2605.03731 <https://doi.org/10.48550/arXiv.2605.03731>`_
+
+        Phase-field fracture models are known to overestimate the crack area, a discrepancy that compromises the accuracy of fracture predictions. This issue stems from the diffuse crack representation and numerical artifacts, such as strain localization, where the phase-field variable artificially saturates across finite elements.
+        Existing correction strategies, including mesh-dependent factors and skeletonization algorithms, have significant limitations. Mesh-based corrections are often unreliable for unstructured meshes, while skeletonization can be complex and inaccurate for intricate crack topologies, especially in three dimensions.
+        This paper introduces a novel and robust framework to correct this overestimation. Our approach is founded on the principle of energy equipartition, where the energy contributions from the phase-field and its gradient are equal as the length-scale parameter approaches zero. Since numerical artifacts primarily affect the phase-field term while leaving the gradient term largely unperturbed, we propose that the crack area can be accurately approximated as twice the gradient-dependent energy. This method is inherently mesh-independent and readily applicable to the entire domain, including 3D simulations.
+        The proposed methodology is validated against benchmarks with analytical solutions and compared with established methods like skeletonization to demonstrate its accuracy. It is then applied to complex geometries with curvilinear crack paths and evaluated in a three-dimensional simulation.
+        +++
+
+        **🔗 Related Resources**
+
+        .. raw:: html
+
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin: 15px 0;">
+                <a href="https://arxiv.org/abs/2605.03731" target="_blank" class="pub-button btn-arxiv">
+                    📄<br>arXiv Paper
+                </a>
+                <a href="https://doi.org/10.48550/arXiv.2605.03731" target="_blank" class="pub-button btn-journal">
+                    🔗<br>DOI Link
+                </a>
+            </div>
+
+    .. grid-item-card::
+        :shadow: lg
+        :class-card: fourth-pub-card
+
+        .. raw:: html
+
+            <div style="text-align: center; margin: 20px 0;">
+                <h2 class="pub-title" style="font-size: 26px;">
                     Proximal Galerkin for Phase Field Fracture
                 </h2>
             </div>
 
         ^^^
 
-        **Authors:** Miguel Castillón, Biswajit Khara, Jørgen S. Dokken, Thomas M. Surowiec, Brendan Keith, Yuri Bazilevs  
+        **Authors:** M. Castillón, B. Khara, J. S. Dokken, T. M. Surowiec, B. Keith, Y. Bazilevs  
         **Year:** 2026  
         **Type:** arXiv preprint 
         **arXiv:** `arXiv:2604.26210 <https://doi.org/10.48550/arXiv.2604.26210>`_
