@@ -114,6 +114,11 @@ html_theme_options = {
             "url": "https://www.linkedin.com/in/miguelcastillon",
             "icon": "fa-brands fa-linkedin",
         },
+        {
+            "name": "Youtube",
+            "url": "https://www.youtube.com/@castillon.miguel",
+            "icon": "fa-brands fa-youtube",
+        },
     ],
 }
 
