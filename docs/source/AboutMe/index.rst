@@ -166,36 +166,27 @@ Professional Experience 💼
 
 .. raw:: html
 
-    <div class="skills-grid">
-
-        <div class="skill-card">
-            <div class="skill-header">
-            <div class="skill-icon">🧑‍🔬</div>
-            <div>
-                <div class="skill-title">Research Scientist</div>
-                <div style="color: #666; font-size: 0.9rem;">IMDEA Materials Institute</div>
-            </div>
-            </div>
+    <div class="timeline">
+        <div class="timeline-item">
+            <div class="timeline-icon">🧑‍🔬</div>
+            <div class="timeline-title">Research Scientist</div>
+            <div class="timeline-institution">IMDEA Materials Institute</div>
             <div class="timeline-dates">📅 January 2021 - October 2025</div>
             <div class="timeline-description">
-            Specializing in:
-            <ul style="margin-top: 0.5rem;">
-                <li>🔬 Phase-field models</li>
-                <li>📐 Finite element methods</li>
-                <li>🧮 Advanced numerical methods</li>
-                <li>💻 Computational simulations</li>
-            </ul>
+                Specializing in:
+                <ul style="margin-top: 0.5rem;">
+                    <li>🔬 Phase-field models</li>
+                    <li>📐 Finite element methods</li>
+                    <li>🧮 Advanced numerical methods</li>
+                    <li>💻 Computational simulations</li>
+                </ul>
             </div>
         </div>
 
-        <div class="skill-card">
-            <div class="skill-header">
-                <div class="skill-icon">🔬</div>
-                <div>
-                    <div class="skill-title">Visiting Researcher</div>
-                    <div style="color: #666; font-size: 0.9rem;">Simula Research Laboratory, Oslo, Norway</div>
-                </div>
-            </div>
+        <div class="timeline-item">
+            <div class="timeline-icon">🔬</div>
+            <div class="timeline-title">Visiting Researcher</div>
+            <div class="timeline-institution">Simula Research Laboratory, Oslo, Norway</div>
             <div class="timeline-dates">📅 February 2025 - April 2025</div>
             <div class="timeline-description">
                 Conducted a 3-month research period at a leading computational 
