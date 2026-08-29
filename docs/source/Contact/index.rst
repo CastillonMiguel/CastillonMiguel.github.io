@@ -15,7 +15,7 @@ Contact Me 📬
 
       **miguel.research@pm.me**
       
-      Drop me a line anytime! I usually respond within 24 hours.
+      Feel free to reach out for any inquiries or collaborations.
 
    .. grid-item-card:: 
       :link: https://www.linkedin.com/in/miguelcastillon

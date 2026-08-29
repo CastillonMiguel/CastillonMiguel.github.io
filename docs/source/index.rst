@@ -118,10 +118,10 @@
     </style>
 
     <div class="hero-section">
-        <h1 class="hero-title">Miguel Castillón</h1>
-        <p class="hero-subtitle">Research Scientist</p>
+        <h1 class="hero-title">Miguel Castillón, PhD</h1>
+        <p class="hero-subtitle">Computational Mechanics | Mechanical Engineering</p>
         <p class="hero-description">
-            I am driving innovation in computational mechanics, with a focus on phase-field models, the finite element method, and advanced numerical methods.
+            I am driving innovation in computational mechanics and mechanical engineering, specializing in phase-field models, finite element analysis, and advanced numerical methods.
         </p>
         <a href="Publications/index.html" class="hero-button">View My Publications 📄</a>
     </div>
@@ -148,11 +148,11 @@
         </div>
 
         <div class="skill-card">
-            <a href="https://doi.org/10.1016/j.ijfatigue.2025.109397" target="_blank">
-                <div class="skill-icon">📄</div>
-                <div class="skill-title">Fatigue Analysis Journal Paper</div>
+            <a href="https://www.youtube.com/@castillon.miguel" target="_blank">
+                <div class="skill-icon">🎥</div>
+                <div class="skill-title">YouTube Channel</div>
                 <div class="skill-description">
-                    Check out the novel phase-field approach to fatigue analysis, published in the International Journal of Fatigue.
+                    Subscribe to my YouTube channel for tutorials, research presentations, and simulations in computational mechanics.
                 </div>
             </a>
         </div>

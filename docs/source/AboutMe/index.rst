@@ -155,7 +155,7 @@ Professional Profile 👤
         <h2>🚀 Welcome to My Professional Journey</h2>
         <p>
             Discover my academic background, professional experience, and technical expertise 
-            in computational mechanics and materials research. From international studies to 
+            in computational mechanics, mechanical engineering, and materials research. From international studies to 
             cutting-edge research at IMDEA Materials Institute.
         </p>
     </div>
@@ -216,13 +216,15 @@ Education Timeline 🎓
             <div class="timeline-icon">🎓</div>
             <div class="timeline-title">PhD in Mechanical Engineering</div>
             <div class="timeline-institution">Polytechnic University of Madrid, Spain</div>
-            <div class="timeline-dates">📅 January 2021 - Present</div>
+            <div class="timeline-dates">📅 January 2021 - July 2026</div>
             <div class="timeline-description">
-            Doctoral research focused on computational mechanics and advanced numerical methods, 
-            with emphasis on phase-field modeling applied to fracture and fatigue phenomena.
+                Thesis: <em>Numerical Methods and Algorithms for Phase-Field Fracture Modeling</em>.<br>
+                Doctoral research focused on computational mechanics and advanced numerical methods, 
+                with emphasis on phase-field modeling applied to fracture and fatigue phenomena.<br>
+                <strong>🏆 Awarded <em>Cum Laude</em>.</strong>
             </div>
-            <a href="https://dimec.etsii.upm.es/doctorado/index.php/upm-phd-mechanical-engineering/" target="_blank" class="timeline-link">
-            📖 View Program Details
+            <a href="https://oa.upm.es/96840/" target="_blank" class="timeline-link">
+                📖 View Thesis
             </a>
         </div>
 
